@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab11_C_1</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        .maingroup{
+            margin: 2%;
+            height: 100vh;
+        }
+        .box{
+            height: 98%;
+            width: 19%;
+            float: left;
+            border-radius: 15px;
+            box-sizing: border-box;
+            margin: 2px 10px 2px 2px;
+        }
+        .text{
+            height: 30%;
+            width: 100%;
+            background-color: black;
+            border-top: 1px solid;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            box-sizing: border-box;
+            padding-left: 15%;
+        }
+        .row1{
+            height: 40vh;
+            margin: 1%;
+            width: 100%;
+        }
+        .grad1{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;        
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#FCE3BA,#F38181);
+        }
+        .grad2{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            background-image: linear-gradient(to bottom right,#F54EA2,#FF7676);
+            height: 70%;
+            width: 100%;
+            border-bottom: 0px;       
+        }
+        .grad3{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#17EAD9,#6078EA);
+        }
+        .grad4{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#622747,#C53364);
+        }
+        .grad5{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            border-bottom: 0px;      
+            background-image: linear-gradient(to bottom right,#7117EA,#EA6060); 
+        }
+        .row2{
+            height: 40vh;
+            margin: 1%;
+            width: 100%;
+        }
+        .grad6{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#42E695,#3BB2B8);
+        }
+        .grad7{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#F02FC2,#6094EA);
+        }
+        .grad8{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#65799B,#5E2563);
+        }
+        .grad9{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#184E68,#57CA85);
+        }
+        .grad10{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#5B247A,#1BCEDF);
+        }
+        .row3{
+            height: 60vh;
+            margin: 1%;
+            width: 100%;
+        }
+        .grad11{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#74276C,#C53364,#FD8263);
+        }
+        .grad12{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#274B74,#8233C5,#E963FD);
+        }
+        .grad13{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#879AF2,#D3208B,#FDA000);
+        }
+        .grad14{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#8929AD,#436AAC,#43B7B8);
+        }
+        .grad15{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#276174,#33C58E,#63FD88);
+        }
+        .row4{
+            height: 60vh;
+            margin: 1%;
+            width: 100%;
+        }
+        
+        .grad16{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#574BCD,#2999AD,#41E975);
+        }
+        .grad17{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#363553,#903775,#E8458B);
+        }
+        .grad18{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#5C2774,#335CC5,#637FFD);
+        }
+        
+        .grad19{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#EA5A6F,#DE791E,#FCCF3A);
+        }
+        .grad20{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;    
+            height: 70%;
+            width: 100%;
+            background-image: linear-gradient(to bottom right,#F17B41,#E05BA2,#CD4BC9);
+        }
+    </style>
+</head>
+<body>
+    <div class="maingroup">
+        <div class="row1">
+            <div class="box">
+                <div class="grad1">.</div>
+                <div class="text">
+                    <p style="color: #FCE3BA;">FCE3BA</p>
+                    <p style="color: #F38181;">F38181</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="grad2">.</div>
+                <div class="text">
+                    <p style="color: #F54EA2;">F54EA2</p>
+                    <p style="color: #FF7676;">FF7676</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="grad3">.</div>
+                <div class="text">
+                    <p style="color: #17EAD9;">17EAD9</p>
+                    <p style="color: #6078EA;">6078EA</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="grad4">.</div>
+                <div class="text">
+                    <p style="color: #622747;">622747</p>
+                    <p style="color: #C53364;">C53364</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="grad5">.</div>
+                <div class="text">
+                    <p style="color: #7117EA;">7117EA</p>
+                    <p style="color: #EA6060;">EA6060</p>
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="box">
+                <div class="grad6">.</div>
+                <div class="text">
+                    <p style="color: #42E695;">42E695</p>
+                    <p style="color: #3BB2B8;">3BB2B8</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="grad7">.</div>
+                <div class="text">
+                    <p style="color: #F02FC2;">F02FC2</p>
+                    <p style="color: #6094EA;">6094EA</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="grad8">.</div>
+                <div class="text">
+                    <p style="color: #65799B;">65799B</p>
+                    <p style="color: #5E2563;">5E2563</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="grad9">.</div>
+                <div class="text">
+                    <p style="color: #184E68;">184E68</p>
+                    <p style="color: #57CA85;">57CA85</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="grad10">.</div>
+                <div class="text">
+                    <p style="color: #5B247A;">5B247A</p>
+                    <p style="color: #1BCEDF;">1BCEDF</p>
+                </div>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="box">
+                <div class="grad11">.</div>
+                <div class="text">
+                    <p style="color: #74276C;">74276C</p>
+                    <p style="color: #C53364;">C53364</p>
+                    <p style="color: #FD8263;">FD8263</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="grad12">.</div>
+                <div class="text">
+                    <p style="color: #274B74;">274B74</p>
+                    <p style="color: #8233C5;">8233C5</p>
+                    <p style="color: #E963FD;">E963FD</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="grad13">.</div>
+                <div class="text">
+                    <p style="color: #879AF2;">879AF2</p>
+                    <p style="color: #D3208B;">D3208B</p>
+                    <p style="color: #FDA000;">FDA000</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="grad14">.</div>
+                <div class="text">
+                    <p style="color: #8929AD;">8929AD</p>
+                    <p style="color: #436AAC;">436AAC</p>
+                    <p style="color: #43B7B8;">43B7B8</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="grad15">.</div>
+                <div class="text">
+                    <p style="color: #276174;">276174</p>
+                    <p style="color: #33C58E;">33C58E</p>
+                    <p style="color: #63FD88;">63FD88</p>
+                </div>
+            </div>
+        </div>
+        <div class="row4">
+            <div class="box">
+                <div class="grad16">.</div>
+                <div class="text">
+                    <p style="color: #574BCD;">574BCD</p>
+                    <p style="color: #2999AD;">2999AD</p>
+                    <p style="color: #41E975;">41E975</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="grad17">.</div>
+                <div class="text">
+                    <p style="color: #363553;">363553</p>
+                    <p style="color: #903775;">903775</p>
+                    <p style="color: #E8458B;">E8458B</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="grad18">.</div>
+                <div class="text">
+                    <p style="color: #5C2774;">5C2774</p>
+                    <p style="color: #335CC5;">335CC5</p>
+                    <p style="color: #637FFD;">637FFD</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="grad19">.</div>
+                <div class="text">
+                    <p style="color: #EA5A6F;">EA5A6F</p>
+                    <p style="color: #DE791E;">DE791E</p>
+                    <p style="color: #FCCF3A;">FCCF3A</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="grad20">.</div>
+                <div class="text">
+                    <p style="color: #F17B41;">F17B41</p>
+                    <p style="color: #E05BA2;">E05BA2</p>
+                    <p style="color: #CD4BC9;">CD4BC9</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

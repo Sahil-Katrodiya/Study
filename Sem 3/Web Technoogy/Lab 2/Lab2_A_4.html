@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2_A_1</title>
+</head>
+<body>
+    <script>
+        start=parseInt(prompt("Enter Number1"));
+        end=parseInt(prompt("Enter Number2"));
+        ans=0;
+        for(i=1;(i<=start)&&(i<=end);i++){
+            if((start%i==0)&&(end%i==0)){
+                ans=i;
+            }
+        }
+        document.write("GDC is = "+ans);
+    </script>
+</body>
+</html>

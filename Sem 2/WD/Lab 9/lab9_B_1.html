@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab9_B_1</title>
+    <style>
+        .custom_animation{
+            border-radius: 50%;
+            box-sizing: border-box;
+            height: 200px;
+            width: 200px;
+            animation: Lab9B1 10s infinite;
+            /* transition: transform; */
+            margin: 500px;
+        }
+        @keyframes Lab9B1{
+            0%{
+                background-color: red;
+                transform: rotate(45deg);
+            }
+            25%{
+                background-color: purple;
+                transform: rotate(135deg);
+            }
+            50%{
+                background-color: green;
+                transform: rotate(225deg);
+            }
+            75%{
+                background-color: blue;
+                transform: rotate(315deg);
+            }
+            100%{
+                background-color: red;
+                transform: rotate(45deg);
+            }
+        }
+        .innercircle{
+            box-sizing: border-box;
+            padding: 20px;
+            height: 135px;
+            width: 135px;
+            border-radius: 50%;
+            background-color: white;
+            animation: inci 8s infinite;
+            transition: tranform;
+        }
+        @keyframes inci{
+            0%{
+                transform: rotate(45deg);
+            }
+            25%{
+                transform: rotate(135deg);
+            }
+            50%{
+                transform: rotate(225deg);
+            }
+            75%{
+                transform: rotate(315deg);
+            }
+            100%{
+                transform: rotate(45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="custom_animation">
+        <div class="innercircle">sahil</div>
+    </div>
+</body>
+</html>

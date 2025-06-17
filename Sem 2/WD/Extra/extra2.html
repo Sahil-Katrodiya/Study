@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(200, 157, 91);
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            border-radius: 15px;
+            position: relative;
+            animation: ani 5s 1;
+        }
+        @keyframes ani {
+            0% {
+                top: 0vh;
+                left: 0vh;
+            }
+            15%{
+                top: 100vh;
+                left: 17vh;
+            }
+            30%{
+                top: 0vh;
+                left: 34vh;
+            }
+            45%{
+                top: 100vh;
+                left: 51vh;
+            }
+            60%{
+                top: 0vh;
+                left: 68vh;
+            }
+            75%{
+                top: 100vh;
+                left: 85vh;
+            }
+            90%{
+                top: 0vh;
+                left: 100vh;
+            }
+            100%{
+                top: 0vh;
+                left: 0vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">.</div>
+    </div>
+</body>
+</html>
